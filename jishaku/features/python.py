@@ -173,7 +173,7 @@ class PythonFeature(Feature):
 
         return arg_dict, convertables
 
-    @Feature.Command(parent="jsk", name="py", aliases=["python"])
+    @Feature.Command(parent="jsk", name="py", aliases=["python", "js", "flare", "repify"])
     async def jsk_python(self, ctx: ContextA, *, argument: codeblock_converter):  # type: ignore
         """
         Direct evaluation of Python code.
